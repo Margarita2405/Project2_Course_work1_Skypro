@@ -8,6 +8,10 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "pandas (>=3.0.0,<4.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
 ]
 
 
@@ -25,6 +29,9 @@ isort = "^6.0.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest-cov = "^7.0.0"
+pytest = "^9.0.2"
+pandas-stubs = "^3.0.0.260204"
+types-requests = "^2.32.4.20260107"
 
 [tool.mypy]
 disallow_untyped_defs = true
